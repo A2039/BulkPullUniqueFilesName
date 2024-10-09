@@ -1,0 +1,53 @@
+Common File Name Comparison Tool
+This Python script compares files from two folders, identifies common files (by name, without considering file extensions), and generates an Excel sheet containing the list of these common file names.
+
+Features
+Folder Comparison: Compares the contents of two user-specified folders to find common files.
+Progress Indicator: Displays a progress bar using tqdm to visualize the file comparison process.
+Excel Output: Creates an Excel file listing the common file names.
+Error Handling: Validates folder paths and Excel filename inputs, with graceful error handling for invalid paths or other issues.
+
+Requirements
+To run the script, you'll need the following:
+
+Python 3.x
+Required Python libraries:
+pandas: For handling the Excel file creation.
+tqdm: For showing the progress bar.
+
+Installation
+Clone the Repository:
+git clone https://github.com/yourusername/repository-name.git
+cd repository-name
+
+Install the Required Packages: Run the following command to install the required Python packages:
+pip install pandas tqdm openpyxl
+
+How to Use
+Run the Script: Use the command below to execute the script:
+
+python script_name.py
+
+Input Prompts: The script will prompt you to input the following:
+Folder 1: Path to the first folder.
+Folder 2: Path to the second folder.
+Folder to Save Excel File: Path where you want the resulting Excel file to be saved.
+Excel Filename: Name for the Excel file (without the extension).
+Progress Bar: The script will show a progress bar as it processes and compares files between the two folders.
+
+Excel Output: Once the process is complete, the script will create an Excel file containing the common file names. The file will be saved to the folder you specified during the input.
+
+Example
+Here is an example of running the script:
+Enter the path for Folder 1: A:\Python\folder1
+Enter the path for Folder 2: A:\Python\folder2
+Enter the path for Folder to save Excel file: A:\Python\results
+Enter the Excel filename (without extension): CommonFiles
+
+The script will then compare the files in the two folders and save the result in A:\Python\results\CommonFiles.xlsx.
+
+Troubleshooting:
+Invalid Folder Path: Ensure that the folder paths you enter exist on your system. The script will prompt you to re-enter if an invalid path is detected.
+Excel Filename Error: The Excel filename cannot be empty. The script will ask you to provide a valid name if the input is empty.
+License
+This project is licensed under the MIT License. Feel free to contribute or modify the code for your needs.
